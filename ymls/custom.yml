@@ -1,0 +1,33 @@
+serverless-offline:
+  port: 4000
+
+regions:
+  prd: us-east-1
+  dev: us-east-1
+  hml: us-east-1
+
+webpack:
+  webpackConfig: ./webpack.config.js
+
+PRIVATE_HTTP:
+  prd: false
+  dev: false
+  hml: false
+
+X_API_KEY:
+  prd: your_api_key_for_prd_enviroment
+  dev: your_api_key_for_dev_enviroment
+  hml: your_api_key_for_hml_enviroment
+
+
+MONGO_DB_URL:
+  dev: mongodb+srv://petsolver:wIjJr8LhEwtnaCWa@cluster0.nop1r.mongodb.net/petsolver?retryWrites=true&w=majority
+  
+warmup:
+  default: false
+  prewarm: false
+  cleanFolder: false
+  role: warmupRole
+  memorySize: 128
+  schedule: cron(0/5 6-20 ? * * *)
+  timeout: 20  

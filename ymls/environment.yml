@@ -1,0 +1,6 @@
+LOG_IS_LAMBDA: 'true'
+APPLICATION_REGION: ${self:custom.regions.${self:provider.stage}}
+MONGO_DB_URL: ${self:custom.MONGO_DB_URL.${self:provider.stage}}
+NODE_ENV: development
+LOG_LEVEL: debug
+PORT: 3000

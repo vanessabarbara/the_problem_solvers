@@ -1,0 +1,12 @@
+petsolver:
+  handler: src/handler.handler
+  memorySize: 128
+  timeout: 300
+  warmup: true
+  events:
+    - http:
+        method: ANY
+        path: '/{proxy+}'
+        private: ${self:custom.PRIVATE_HTTP.${self:provider.stage}}
+  layers:
+    - {Ref: ProjectCommonsLambdaLayer}

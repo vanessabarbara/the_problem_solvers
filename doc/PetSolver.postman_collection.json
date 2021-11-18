@@ -1,0 +1,478 @@
+{
+	"info": {
+		"_postman_id": "657ab100-d02a-4eb3-af51-4b389a9e63ad",
+		"name": "PetSolver",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "CreateUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Higor Mazzola\",\n    \"idade\": 22,\n    \"dataNascimento\": \"29/04/1999\",\n    \"endereco\": \"Av Ernesto Loretto, 78\",\n    \"bairro\": \"Jardim Bela Vista\",\n    \"complemento\": \"Casa\",\n    \"cidade\": \"Ribeirão Preto\",\n    \"estado\": \"SP\",\n    \"email\": \"higor_teste@hotmail.com\",\n    \"senha\": \"12345678\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://i7axlovbcb.execute-api.us-east-1.amazonaws.com/dev/petsolver/user",
+							"protocol": "https",
+							"host": [
+								"i7axlovbcb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"petsolver",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://i7axlovbcb.execute-api.us-east-1.amazonaws.com/dev/petsolver/user",
+							"protocol": "https",
+							"host": [
+								"i7axlovbcb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"petsolver",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://i7axlovbcb.execute-api.us-east-1.amazonaws.com/dev/petsolver/user/619696484eed12000978042f",
+							"protocol": "https",
+							"host": [
+								"i7axlovbcb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"petsolver",
+								"user",
+								"619696484eed12000978042f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Higor Cuogo\",\n    \"idade\": 22,\n    \"dataNascimento\": \"29/04/1999\",\n    \"endereco\": \"Av Ernesto Loretto, 78\",\n    \"bairro\": \"Jardim Bela Vista\",\n    \"complemento\": \"Casa\",\n    \"cidade\": \"São Paulo\",\n    \"estado\": \"SP\",\n    \"email\": \"higor_teste@hotmail.com\",\n    \"senha\": \"12345678\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://i7axlovbcb.execute-api.us-east-1.amazonaws.com/dev/petsolver/user/619696484eed12000978042f",
+							"protocol": "https",
+							"host": [
+								"i7axlovbcb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"petsolver",
+								"user",
+								"619696484eed12000978042f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://i7axlovbcb.execute-api.us-east-1.amazonaws.com/dev/petsolver/user/619695b84eed12000978042e",
+							"protocol": "https",
+							"host": [
+								"i7axlovbcb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"petsolver",
+								"user",
+								"619695b84eed12000978042e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pet",
+			"item": [
+				{
+					"name": "CreatePet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Bob\",\n    \"dataNascimento\": \"29/04/2020\",\n    \"dataDoacao\": \"07/05/2020\",\n    \"raca\": \"Chow-Chow\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://i7axlovbcb.execute-api.us-east-1.amazonaws.com/dev/petsolver/pet",
+							"protocol": "https",
+							"host": [
+								"i7axlovbcb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"petsolver",
+								"pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllPets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://i7axlovbcb.execute-api.us-east-1.amazonaws.com/dev/petsolver/pet",
+							"protocol": "https",
+							"host": [
+								"i7axlovbcb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"petsolver",
+								"pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetPetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://i7axlovbcb.execute-api.us-east-1.amazonaws.com/dev/petsolver/pet/6196a337ca275845615a7a9a",
+							"protocol": "https",
+							"host": [
+								"i7axlovbcb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"petsolver",
+								"pet",
+								"6196a337ca275845615a7a9a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePet",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Boob\",\n    \"dataNascimento\": \"29/04/2020\",\n    \"dataDoacao\": \"07/05/2020\",\n    \"raca\": \"Chow-Chow\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://i7axlovbcb.execute-api.us-east-1.amazonaws.com/dev/petsolver/pet/6196a337ca275845615a7a9a",
+							"protocol": "https",
+							"host": [
+								"i7axlovbcb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"petsolver",
+								"pet",
+								"6196a337ca275845615a7a9a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePet",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://i7axlovbcb.execute-api.us-east-1.amazonaws.com/dev/petsolver/pet/6196a337ca275845615a7a9a",
+							"protocol": "https",
+							"host": [
+								"i7axlovbcb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"petsolver",
+								"pet",
+								"6196a337ca275845615a7a9a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ProdutoServico",
+			"item": [
+				{
+					"name": "CreateProdutoServico",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Coleira\",\n    \"descricao\": \"Coleira para cachorro e gato\",\n    \"tipo\": \"produto\",\n    \"preco\": 10,\n    \"qtd\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://i7axlovbcb.execute-api.us-east-1.amazonaws.com/dev/petsolver/produtoservico",
+							"protocol": "https",
+							"host": [
+								"i7axlovbcb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"petsolver",
+								"produtoservico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllProdutoServico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://i7axlovbcb.execute-api.us-east-1.amazonaws.com/dev/petsolver/produtoservico",
+							"protocol": "https",
+							"host": [
+								"i7axlovbcb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"petsolver",
+								"produtoservico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProdutoServicoById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://i7axlovbcb.execute-api.us-east-1.amazonaws.com/dev/petsolver/produtoservico/6196aece41216a0008a74281",
+							"protocol": "https",
+							"host": [
+								"i7axlovbcb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"petsolver",
+								"produtoservico",
+								"6196aece41216a0008a74281"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProdutoServico",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Coleira\",\n    \"descricao\": \"coleira para cachorro e gato\",\n    \"tipo\": \"produto\",\n    \"preco\": 10,\n    \"qtd\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://i7axlovbcb.execute-api.us-east-1.amazonaws.com/dev/petsolver/produtoservico/6196aece41216a0008a74281",
+							"protocol": "https",
+							"host": [
+								"i7axlovbcb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"petsolver",
+								"produtoservico",
+								"6196aece41216a0008a74281"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProdutoServico",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://i7axlovbcb.execute-api.us-east-1.amazonaws.com/dev/petsolver/produtoservico/6196aece41216a0008a74281",
+							"protocol": "https",
+							"host": [
+								"i7axlovbcb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"petsolver",
+								"produtoservico",
+								"6196aece41216a0008a74281"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProdutoServicoByTipo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://i7axlovbcb.execute-api.us-east-1.amazonaws.com/dev/petsolver/produtoservico/tipo?tipo=produto",
+							"protocol": "https",
+							"host": [
+								"i7axlovbcb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"petsolver",
+								"produtoservico",
+								"tipo"
+							],
+							"query": [
+								{
+									"key": "tipo",
+									"value": "produto"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

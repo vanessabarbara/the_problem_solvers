@@ -1,0 +1,23 @@
+service:
+  name: api-petsolver
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: ${self:custom.regions.${self:provider.stage}}
+  stage: ${opt:stage, 'dev'}  
+  deploymentBucket:
+     name: ${self:custom.DEPLOYMENT_BUCKET_ACCOUNT}
+  apiKeys:
+    - name: ${self:service}-api-key
+    - value: ${self:custom.X_API_KEY.${self:provider.stage}}
+  environment: ${file(ymls/environment.yml)}
+custom: ${file(ymls/custom.yml)}    
+functions: ${file(ymls/functions.yml)} 
+layers:
+  ProjectCommons:
+    path: layer
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+  - serverless-plugin-warmup  

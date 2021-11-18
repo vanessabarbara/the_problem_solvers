@@ -1,0 +1,21 @@
+{
+  "name": "project-commons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jefferson Cardoso",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "moment": "^2.29.1",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.10.9",
+    "typedi": "^0.8.0",
+    "uuid": "^8.3.1",
+    "serverless-http": "2.7.0",
+    "express": "^4.16.4"
+  }
+}
