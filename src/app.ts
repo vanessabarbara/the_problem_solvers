@@ -1,4 +1,5 @@
 import * as express from 'express';
+import * as cors from 'cors';
 import PetRouter from './routes/pet-router';
 import ProdutoServicoRouter from './routes/produto-servico-router';
 import UserRouter from './routes/user-router';
@@ -10,6 +11,7 @@ class App {
         this.app = express();
         this.app.use(express.json());
         this.setRoutes();
+        this.app.use(cors());
     }
 
     private async setRoutes() {
