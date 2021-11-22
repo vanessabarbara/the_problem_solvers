@@ -59,4 +59,14 @@ export class UserController {
             next(error);
         }
     }
+
+    public async login(req: Request, res: Response, next: NextFunction) {
+        try {
+            const { email, senha } = req.body;
+            const response = await this.logic.login(email, senha);
+            res.status(200).json(response);
+        } catch (error) {
+            next(error);
+        }
+    }
 }

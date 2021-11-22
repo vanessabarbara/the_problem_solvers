@@ -29,4 +29,12 @@ export class UserLogic {
     public async remove(id: string) {
         return await this.userRespository.remove(id);
     }
+
+    public async login(email: string, senha: string) {
+        const user = await this.userRespository.login(email, senha);
+        
+        if (user) return {statusLogin: true, user: user};
+
+        return "Email ou senha incorretos."
+    }
 }

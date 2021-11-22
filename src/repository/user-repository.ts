@@ -48,4 +48,13 @@ export class UserRepository {
             return error;
         }
     }
+
+    public async login(email: string, senha: string): Promise<IUserModel> {
+        try {
+            return await UserModel.findOne({email, senha});
+        } catch (error) {
+            console.log('user::repository::login = ' + error);
+            return error;
+        }
+    }
 }
