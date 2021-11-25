@@ -1,0 +1,49 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>PetSolver</title>
+    <link rel="icon" type="imagens/png" href="imagens/logo.png" />
+</head>
+<body>
+<center>
+<img src="imagens/logo.png" height="200" width="200">
+</br>
+<table bordercolor="6A5ACD">
+<tr>
+<td> <center>
+<n><h2> <font color="6A5ACD"> Categorias </color> </h2> </n>
+<a href="usuarios.html" target="principal" > <input type="button" value="Usuários">
+</br>
+<a href="pets.html" target="principal" > <input type="button" value="Pets">
+</br>
+<a href="serv.html" target="principal" > <input type="button" value="Serviços">
+</br>
+<a href="produtos.html" target="principal" > <input type="button" value="Produtos">
+</center></td>
+</td> 
+</table> 
+</br>
+</br>
+</br>
+
+<table bordercolor="6A5ACD">
+<tr>
+<td> <center>
+<n><h2> <font color="6A5ACD"> Meus interesses </color> </h2> </n>
+
+<a href="gatos.html" target="principal" > <input type="button" value="Gatos">
+</br>
+<a href="petshop.html" target="principal" > <input type="button" value="PetShop">
+</br>
+<a href="hotel.html" target="principal" > <input type="button" value="Hotel para cães e gatos">
+</br>
+<a href="banho.html" target="principal" > <input type="button" value="Banho e tosa">
+
+</center></td>
+</td> 
+</table> 
+
+
+</center>
+</body>
+</html>
