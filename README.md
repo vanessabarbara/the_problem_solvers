@@ -1,3 +1,6 @@
+##Devidos a problemas internos do grupo, o código front não está está integrado ao back, porém, é possivel ver as duas partes funcionando 
+#Para ver as telas do projeto, baixe a pasta "Código Front" e abra o arquivo home.html
+
 ## Pré-requisitos
 # Para começar precisamos garantir os pré-requisitos a seguir instalados na máquina:
 
